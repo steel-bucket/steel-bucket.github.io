@@ -2,7 +2,7 @@ import "./Resume.css";
 import ScrollBar from "../Windows/ScrollBar";
 import {useRef} from "react";
 import WindowComponent from "../Windows/WindowComponent";
-import {links} from "../../constants/links";
+import resume from "../../assets/resumeOct.pdf";
 
 function Resume({id}: { id: string }) {
     const scrollableContentRef = useRef(null);
@@ -21,9 +21,9 @@ function Resume({id}: { id: string }) {
 
 
                             <embed className="pdf"
-                                    src=
-                                        {links.resume_url}
-                                    width="800" height="500">
+                                   src=
+                                       {resume}
+                                   width="800" height="500">
                             </embed>
                         </div>
                     </div>
