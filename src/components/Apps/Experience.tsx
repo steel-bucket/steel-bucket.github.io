@@ -14,7 +14,7 @@ function Experience({id}: { id: string }) {
             <div id="text-editor-container">
                 <div id="text-body-container">
                     <div onTouchStartCapture={stopDrag} id="text-editor-inner" ref={scrollableContentRef}>
-                        <div id="text-container" style={{ padding:"5px"}}>
+                        <div id="text-container" style={{ padding:"10px"}}>
                             <h1>Amplify Consulting LLC</h1>
                             <p>
                                 I worked as a Full Stack Intern in a SaaS Firm called Amplify Consulting LLC. It was a

@@ -17,7 +17,11 @@ function Skills({id}: { id: string }) {
                 <div id="text-body-container">
                     <div onTouchStartCapture={stopDrag} id="text-editor-inner" ref={scrollableContentRef}>
                         <div id="text-container">
-                            <div className="container">
+                            <div className="container"
+                                style={{
+                                    padding: "10px",
+                                }}
+                            >
                                 <h1>Developer Skills</h1>
 
                                 <div className="category">
