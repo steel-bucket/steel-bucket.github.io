@@ -1,0 +1,36 @@
+.app-container {
+    position: absolute;
+    display: flex;
+    overflow-wrap: break-word;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 66px;
+    cursor: pointer;
+}
+
+/* #folder-container:active {
+    cursor: grabbing;
+} */
+
+.app-image {
+    width: 48px;
+    height: auto;
+    user-select: none;
+}
+
+.app-name-text {
+    font-size: 15px;
+    max-width: 66px;
+    width: fit-content;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1px;
+    padding-left: 1px; 
+    margin-top: 8px;
+    margin-bottom: 0;
+    line-height: 19px;
+    font-family: "MS-Sans-Serif";
+    color: black;
+    border: 2px dotted transparent;
+}
