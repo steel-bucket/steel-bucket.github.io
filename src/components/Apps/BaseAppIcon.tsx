@@ -60,7 +60,7 @@ function BaseAppIcon({ openApp, name = "New App", init_x = 0, init_y = 0, app_im
             setZIndex(0);
         }
     };
-
+    // @ts-ignore
     const handleDrag = (event: any, data: any) => {
         setPosition({
             x: position.x + data.deltaX,
