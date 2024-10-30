@@ -31,17 +31,14 @@ function Desktop() {
 
     return (
         <div onContextMenu={handleRightClick} onClick={handleClick} id="desktop-container">
-            {/* render all the desktop app icons */}
             {desktopApps && Object.entries(desktopApps).map(([id, child]) => (
                 <child.component key={id} id={id} {...child.props}/>
             ))}
 
-            {/* render all the desktop windows */}
             {tabs && Object.entries(tabs).map(([id, tab]) => (
                 <tab.component key={id} id={id} {...tab.props}/>
             ))}
 
-            {/* render the right click context menu */}
             {contextMenuVisible &&
                 <div ref={contextMenuRef}>
                     <ContextMenu x_pos={contextMenuPos.x} y_pos={contextMenuPos.y}

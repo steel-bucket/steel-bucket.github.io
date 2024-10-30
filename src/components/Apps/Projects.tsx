@@ -216,7 +216,7 @@ function Projects({id}: { id: string }) {
                                 }>Github Link</h6>
                             </a>
                             <p className="project-body">
-                                It is a pytorch model to classify whether a binary value(like if a person has diabetes
+                                It is a pytorch model to classify a binary value(like if a person has diabetes
                                 or not). It was built using the ReLU activation function and L2 Regularization. It
                                 was built in Jun 2023.
                             </p>
