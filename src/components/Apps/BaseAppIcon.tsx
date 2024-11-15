@@ -102,6 +102,7 @@ function BaseAppIcon({openApp, name = "New App", init_x = 0, init_y = 0, app_img
     }, []);
 
     return (
+        // @ts-ignore
         <Draggable
             bounds="parent"
             position={{x: position.x, y: position.y}}
