@@ -38,8 +38,8 @@ function Projects({id}: { id: string }) {
                                 be replicated by businesses to build their own online store, which is the project I'm
                                 currently working on, a Rust Based CLI for generating Ecommerce Websites.<br/>
                                 Work started on July 2024 and I'm still perfecting it.<br/>
-                                Unfortunately there's some deployment issues with Payload CMS, so it couldn't be
-                                deployed yet.
+                                It can be checked out at
+                                <a href="https://salaried-ecommerce.onrender.com/"> salaried-ecommerce.onrender.com</a>
                             </p>
                             <img id='ecommerce' className="text-editor-image" src={ecommerce}></img>
                             <h2>
