@@ -40,6 +40,8 @@ function Projects({id}: { id: string }) {
                                 Work started on July 2024 and I'm still perfecting it.<br/>
                                 It can be checked out at
                                 <a href="https://salaried-ecommerce.onrender.com/"> salaried-ecommerce.onrender.com</a>
+                                The deployment in render does fall short of memory. I'm working on an alternative in
+                                GCP.
                             </p>
                             <img id='ecommerce' className="text-editor-image" src={ecommerce}></img>
                             <h2>
@@ -73,6 +75,39 @@ function Projects({id}: { id: string }) {
                             <p className="project-body">
                             </p>
                             <hr className="text-editor-hr"/>
+                            <h1 style={{marginTop: 5}} className="project-title">Ecommerce CLI tool</h1>
+                            <a href="https://github.com/steel-bucket/ecommerce-cli-tool">
+                                <h6 style={
+                                    {
+                                        marginTop: 0,
+                                        marginBottom: 0,
+                                        padding: 0,
+                                    }
+                                }>Github Link</h6>
+                            </a>
+                            <p className="project-body">
+                                It's a CLI tool built for clients and developers to make their own ecommerce website.
+                                It's
+                                currently WIP and it basically parses the project owner's info, images, addresses into
+                                my large-scale Ecommerce project and then asks for categories of the products he/she
+                                would be selling.
+                            </p>
+
+                            <h3>
+                                Tech Stack:
+                            </h3>
+                            <ul
+                                style={{
+                                    fontSize: 12,
+                                }}>
+                                <li>Rust</li>
+                                <li>Salaried-Ecommerce</li>
+                                <li>clap</li>
+                            </ul>
+                            <p className="project-body">
+                            </p>
+                            <hr className="text-editor-hr"/>
+
 
                             <h1 className="project-title">Tweeb</h1>
 

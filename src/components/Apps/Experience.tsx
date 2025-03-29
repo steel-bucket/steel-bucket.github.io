@@ -3,6 +3,7 @@ import ScrollBar from "../Windows/ScrollBar";
 import {useRef} from "react";
 import WindowComponent from "../Windows/WindowComponent";
 import dialog from "../../assets/dialog.png";
+import interncertificate from "../../assets/interncertificate.png"
 
 function Experience({id}: { id: string }) {
     const scrollableContentRef = useRef(null);
@@ -14,7 +15,17 @@ function Experience({id}: { id: string }) {
             <div id="text-editor-container">
                 <div id="text-body-container">
                     <div onTouchStartCapture={stopDrag} id="text-editor-inner" ref={scrollableContentRef}>
-                        <div id="text-container" style={{ padding:"10px"}}>
+                        <div id="text-container" style={{padding: "10px"}}>
+                            <h1>CCExtractor Development</h1>
+                            <p>
+                                I have worked as a contributor in this FOSS Organization from November 2024 till
+                                present.
+                                At first, back in November I fixed a bug where the application was not compiling in
+                                Archlinux.
+                                After that, for the next few months I worked on Porting the share module, the
+                                file_functions module, the demuxer module and gxf module to Rust as a part of the
+                                CCExtractor 1.0.0 project.
+                            </p>
                             <h1>Amplify Consulting LLC</h1>
                             <p>
                                 I worked as a Full Stack Intern in a SaaS Firm called Amplify Consulting LLC. It was a
@@ -47,6 +58,9 @@ function Experience({id}: { id: string }) {
                                     title="YouTube video player" style={{padding: "5px"}}
                             >
                             </iframe>
+                            <h2>Certificate</h2>
+                            <img src={interncertificate} alt="Cert" style={{width: "70%", padding: "5px"}}/>
+
                         </div>
                     </div>
                     <ScrollBar content_ref={scrollableContentRef}/>

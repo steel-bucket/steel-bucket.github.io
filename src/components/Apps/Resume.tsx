@@ -25,6 +25,11 @@ function Resume({id}: { id: string }) {
                                        {resume}
                                    width="800" height="500">
                             </embed>
+                            <h1 style={{paddingLeft: '40%'}}>
+
+                                <a href="https://drive.google.com/file/d/1z_Hs2u69VTiM-0xIlnaszVghimB4d_VF/view">Zoom
+                                    In</a>
+                            </h1>
                         </div>
                     </div>
                     <ScrollBar content_ref={scrollableContentRef}/>
