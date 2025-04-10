@@ -2,7 +2,7 @@ import "./Resume.css";
 import ScrollBar from "../Windows/ScrollBar";
 import {useRef} from "react";
 import WindowComponent from "../Windows/WindowComponent";
-import resume from "../../assets/resumeOct.pdf";
+import resume from "../../assets/resumeMar.pdf";
 
 function Resume({id}: { id: string }) {
     const scrollableContentRef = useRef(null);
