@@ -27,7 +27,7 @@ function Resume({id}: { id: string }) {
                             </embed>
                             <h1 style={{paddingLeft: '40%'}}>
 
-                                <a href="https://drive.google.com/file/d/1z_Hs2u69VTiM-0xIlnaszVghimB4d_VF/view">Zoom
+                                <a href="https://drive.google.com/file/d/1SdinEx6yoXIrQ5S0Mw_iu6kzPhebfGMb/view?usp=sharing">Zoom
                                     In</a>
                             </h1>
                         </div>

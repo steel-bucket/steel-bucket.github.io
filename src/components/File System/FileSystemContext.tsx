@@ -1,4 +1,4 @@
-import {createContext, FC, ReactNode, useState} from "react"
+import {createContext, FC, ReactNode, useEffect, useState} from "react"
 import FolderIcon from "../Apps/FolderIcon"
 import ProjectsAppIcon from "../Apps/ProjectsAppIcon";
 import SkillsAppIcon from "../Apps/SkillsAppIcon.tsx";
@@ -42,6 +42,15 @@ interface ProviderProps {
 
 
 const FileSystemContextProvider: FC<ProviderProps> = ({children}) => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const [folders, setFolders] = useState<Record<string, FileChildrenType>>(
         {
             "root":
@@ -67,14 +76,19 @@ const FileSystemContextProvider: FC<ProviderProps> = ({children}) => {
                 },
             "desktop":
                 {
-                    children: {
-                        "skills": {component: SkillsAppIcon, props: {init_x: 40, init_y: 40}},
-                        "projects": {component: ProjectsAppIcon, props: {init_x: 40, init_y: 160}},
-                        "experience": {component: ExperienceAppIcon, props: {init_x: 40, init_y: 280}},
-                        "certifications": {component: CertificationAppIcon, props: {init_x: 40, init_y: 400}},
-                        "resume": {component: ResumeAppIcon, props: {init_x: 40, init_y: 520}},
-                    },
-                    parent: "deep",
+                    children: isMobile
+                        ? {
+                            "skills": {component: SkillsAppIcon, props: {init_x: 40, init_y: 40}},
+                            "projects": {component: ProjectsAppIcon, props: {init_x: 40, init_y: 160}},
+                            "experience": {component: ExperienceAppIcon, props: {init_x: 40, init_y: 280}},
+                        }
+                        : {
+                            "skills": {component: SkillsAppIcon, props: {init_x: 40, init_y: 40}},
+                            "projects": {component: ProjectsAppIcon, props: {init_x: 40, init_y: 160}},
+                            "experience": {component: ExperienceAppIcon, props: {init_x: 40, init_y: 280}},
+                            "certifications": {component: CertificationAppIcon, props: {init_x: 40, init_y: 400}},
+                            "resume": {component: ResumeAppIcon, props: {init_x: 40, init_y: 520}},
+                        }, parent: "deep",
                     name: "Desktop",
                     component: FolderIcon,
                 },
