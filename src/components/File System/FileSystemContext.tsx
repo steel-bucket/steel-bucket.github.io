@@ -5,6 +5,7 @@ import SkillsAppIcon from "../Apps/SkillsAppIcon.tsx";
 import CertificationAppIcon from "../Apps/CertificationAppIcon.tsx";
 import ResumeAppIcon from "../Apps/ResumeAppIcon.tsx";
 import ExperienceAppIcon from "../Apps/ExperienceAppIcon.tsx";
+import GamesAppIcon from "../Apps/GamesAppIcon.tsx";
 
 interface FileChildrenType {
     children: Record<string, { component: React.ComponentType<any>, props: Record<string, any> }>,
@@ -81,6 +82,7 @@ const FileSystemContextProvider: FC<ProviderProps> = ({children}) => {
                             "skills": {component: SkillsAppIcon, props: {init_x: 40, init_y: 40}},
                             "projects": {component: ProjectsAppIcon, props: {init_x: 40, init_y: 160}},
                             "experience": {component: ExperienceAppIcon, props: {init_x: 40, init_y: 280}},
+                            "games": {component: GamesAppIcon, props: {init_x: 40, init_y: 400}},
                         }
                         : {
                             "skills": {component: SkillsAppIcon, props: {init_x: 40, init_y: 40}},
@@ -88,6 +90,7 @@ const FileSystemContextProvider: FC<ProviderProps> = ({children}) => {
                             "experience": {component: ExperienceAppIcon, props: {init_x: 40, init_y: 280}},
                             "certifications": {component: CertificationAppIcon, props: {init_x: 40, init_y: 400}},
                             "resume": {component: ResumeAppIcon, props: {init_x: 40, init_y: 520}},
+                            "games": {component: GamesAppIcon, props: {init_x: 160, init_y: 40}},
                         }, parent: "deep",
                     name: "Desktop",
                     component: FolderIcon,

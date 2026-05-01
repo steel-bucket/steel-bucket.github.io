@@ -13,7 +13,7 @@ function ExperienceAppIcon({init_x, init_y, id}: ExperienceAppIconProps){
     const { addTab } = useContext(TabContext);
 
     const openApp = () => {
-        addTab("Skills", id, Experience, filled_folder)
+        addTab("Experience", id, Experience, filled_folder)
     }
 
     return (

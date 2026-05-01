@@ -29,6 +29,7 @@ function Skills({id}: { id: string }) {
                                     <ul>
                                         <li>JavaScript
                                         </li>
+                                        <li>TypeScript</li>
                                         <li>Python</li>
                                         <li>Ruby</li>
                                         <li>C/C++</li>
@@ -46,6 +47,7 @@ function Skills({id}: { id: string }) {
                                         <li>Material UI</li>
                                         <li>NextUI</li>
                                         <li>ShadCN UI</li>
+                                        <li>VS Code Extension UI</li>
                                     </ul>
                                 </div>
 
@@ -57,27 +59,34 @@ function Skills({id}: { id: string }) {
                                         <li>Ruby on Rails</li>
                                         <li>Drizzle</li>
                                         <li>tRPC</li>
-                                        <li>NestJS</li>
+                                        <li>Tokio</li>
+                                        <li>VS Code SDK</li>
                                     </ul>
                                 </div>
 
                                 <div className="category">
-                                    <h2>Data Preprocessing and Analysis</h2>
+                                    <h2>Agentic Tooling and Observability</h2>
                                     <ul>
-                                        <li>pandas</li>
-                                        <li>matplotlib</li>
-                                        <li>seaborn</li>
-                                        <li>OpenCV</li>
-                                        <li>PowerBI</li>
+                                        <li>OpenAI model integrations</li>
+                                        <li>Prompt caching</li>
+                                        <li>Reliability test generation</li>
+                                        <li>New Relic NRQL</li>
+                                        <li>VM Containers</li>
                                     </ul>
                                 </div>
 
                                 <div className="category">
-                                    <h2>Developer Tools</h2>
+                                    <h2>DevOps and Databases</h2>
                                     <ul>
                                         <li>Git</li>
+                                        <li>GitHub Actions</li>
                                         <li>Docker</li>
-                                        <li>AWS</li>
+                                        <li>AWS S3</li>
+                                        <li>AWS EC2</li>
+                                        <li>AWS Cognito</li>
+                                        <li>PostgreSQL</li>
+                                        <li>MySQL</li>
+                                        <li>MongoDB</li>
                                     </ul>
                                 </div>
 
@@ -87,15 +96,6 @@ function Skills({id}: { id: string }) {
                                         <li>numpy</li>
                                         <li>SKlearn</li>
                                         <li>Pytorch</li>
-                                    </ul>
-                                </div>
-
-                                <div className="category">
-                                    <h2>Databases</h2>
-                                    <ul>
-                                        <li>PostgreSQL</li>
-                                        <li>MySQL</li>
-                                        <li>MongoDB</li>
                                     </ul>
                                 </div>
 

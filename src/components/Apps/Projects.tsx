@@ -19,6 +19,41 @@ function Projects({id}: { id: string }) {
                 <div id="text-body-container">
                     <div onTouchStartCapture={stopDrag} id="text-editor-inner" ref={scrollableContentRef}>
                         <div id="text-container">
+                            <h1 style={{marginTop: 5}} className="project-title">Alcohol, Attendance and Viral-like Symptoms Detection Device</h1>
+                            <h6 style={
+                                {
+                                    marginTop: 0,
+                                    marginBottom: 0,
+                                    padding: 0,
+                                }
+                            }>Patent references from resume</h6>
+                            <p className="project-body">
+                                Sept. 2024 - May 2025<br/>
+                                Utility Patent - IPO Journal 46/2025 Part 1 - 202521102798 - Pg. 386<br/>
+                                Design Patent - IPO Journal 52/2025 Part 4 - 475023-001 - Pg. 209
+                            </p>
+                            <p className="project-body">
+                                Developed the electronics system and designed the workflow for a hardware project that
+                                monitors health and attendance in high-security and disease-susceptible environments.
+                                The device integrates alcohol detection, attendance capture, and infectious symptom
+                                screening into one workflow.
+                            </p>
+                            <ul>
+                                <li>Integrated 4+ sensors for alcohol-content, cough, fever, and attendance workflows.</li>
+                                <li>Wrote Arduino and Python code with full test coverage around the detection pipeline.</li>
+                                <li>Helped a 6-person team experiment with neural-network architecture choices for
+                                    separating contagious coughs from normal coughs using frequency, decibel, and
+                                    timing features.</li>
+                            </ul>
+                            <h3>Tech Stack:</h3>
+                            <ul style={{fontSize: 12}}>
+                                <li>Arduino</li>
+                                <li>Python</li>
+                                <li>Embedded sensors</li>
+                                <li>Neural network prototyping</li>
+                            </ul>
+                            <hr className="text-editor-hr"/>
+
                             <h1 style={{marginTop: 5}} className="project-title">Salaried Ecommerce</h1>
                             <a href="https://github.com/steel-bucket/salaried-ecommerce">
                                 <h6 style={

@@ -13,7 +13,7 @@ function CertificationsAppIcon({init_x, init_y, id}: CertificationsAppIconProps)
     const { addTab } = useContext(TabContext);
 
     const openApp = () => {
-        addTab("Skills", id, Certifications, filled_folder)
+        addTab("Certifications", id, Certifications, filled_folder)
     }
 
     return (

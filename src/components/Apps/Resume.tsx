@@ -3,6 +3,7 @@ import ScrollBar from "../Windows/ScrollBar";
 import {useRef} from "react";
 import WindowComponent from "../Windows/WindowComponent";
 import resume from "../../assets/resumeECE.pdf";
+import {links} from "../../constants/links";
 
 function Resume({id}: { id: string }) {
     const scrollableContentRef = useRef(null);
@@ -27,7 +28,7 @@ function Resume({id}: { id: string }) {
                             </embed>
                             <h1 style={{paddingLeft: '40%'}}>
 
-                                <a href="https://drive.google.com/file/d/1SdinEx6yoXIrQ5S0Mw_iu6kzPhebfGMb/view?usp=sharing">Zoom
+                                <a href={links.resume_url}>Zoom
                                     In</a>
                             </h1>
                         </div>

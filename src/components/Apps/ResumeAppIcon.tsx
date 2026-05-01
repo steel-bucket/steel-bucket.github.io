@@ -13,7 +13,7 @@ function ResumeAppIcon({init_x, init_y, id}: ResumeAppIconProps){
     const { addTab } = useContext(TabContext);
 
     const openApp = () => {
-        addTab("Skills", id, Resume, filled_folder)
+        addTab("Resume", id, Resume, filled_folder)
     }
 
     return (
